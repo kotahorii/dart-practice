@@ -1,8 +1,9 @@
-print("文字列の表示")
-print("$_counter")
-print("${_counter + 1}")
+void func({String? param1, int? param2}) {
+  var result = '$param1 / $param2';
+  print(result);
+}
 
-class MyData {
-  String name;
-  MyData(this.name)
+void func1(String? param1, [int param2 = 0]) {
+  var result = '$param1/$param2';
+  print(result);
 }
